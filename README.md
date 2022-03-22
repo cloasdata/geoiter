@@ -2,11 +2,13 @@
 iterates the planet.
 
 A simple tool to iterate circles within given boundaries:
-![grid_germany](https://user-images.githubusercontent.com/84661606/159549731-44de6016-0582-4ef2-94ba-646b6277aec3.png)
+
+<img src="https://user-images.githubusercontent.com/84661606/159549731-44de6016-0582-4ef2-94ba-646b6277aec3.png" width="300" />
 
 
-**geoiter** can be used for web scraping to utilize geo/location queries.
-![result](https://user-images.githubusercontent.com/84661606/159549754-470fa19f-a826-44ad-b76c-6c338ae72b1b.png)
+**geoiter** can be used for web scraping to utilize geo/location queries:
+
+<img src="https://user-images.githubusercontent.com/84661606/159549754-470fa19f-a826-44ad-b76c-6c338ae72b1b.png" width="300"/>
 
 In many cases the web page restrict the result items to a fixed number. 
 With geoiter you can now dissect this one query to a many location queries to relax 
