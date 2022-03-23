@@ -1,7 +1,12 @@
 # geoiter
 iterates the planet.
 
-A simple tool to iterate circles within given boundaries:
+A simple tool to iterate coordinates within given boundaries.
+The usage is mostly for querying/searching by location. 
+Geoiter provides many locations within a boundary, like a country. 
+Let's say Germany has in sum 5000 houses to sell. Then most platforms will only allow you to visit the first 200 houses. 
+Now to get the others, you need to dissect the big boundary area into smaller ones.
+And this is where geoiter provides you with coordinates
 
 <img src="https://user-images.githubusercontent.com/84661606/159549731-44de6016-0582-4ef2-94ba-646b6277aec3.png" width="300" />
 
@@ -43,7 +48,7 @@ if __name__ == "__main__":
         print(coordinate)
 ```
 ## speed
-one may consider that geo data have mb of coordinates. Which may make the this iteration very slow,
+one may consider that geo data have megabytes of coordinates. Which may make the iteration very slow,
 because it needs to look up coordinates in the boundary often.
 To accelerate the **geoiter** provides a very simple compressor and uses bisect instead of list iteration.
 However, it still can be slow.
@@ -65,3 +70,10 @@ get boundaries from osm or others sources like
 * https://osm-boundaries.com/
 * ...
 
+## todo
+* SRP for compressor
+* Make own haversine calculation for fixed directions.
+
+## Homepage
+* <a href="https://github.com/cloasdata/geoiter">on github </a>
+* <a href="https://pypi.org/project/geoiter">on pypi </a>
