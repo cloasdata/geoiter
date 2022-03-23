@@ -1,3 +1,5 @@
+""" Geoiter module"""
+__version__ = "0.1.1"
 import bisect
 
 from typing import List, Tuple, Optional
