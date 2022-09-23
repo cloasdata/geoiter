@@ -1,12 +1,12 @@
 # geoiter
 iterates the planet.
 
-A simple tool to iterate coordinates within given boundaries.
-The usage is mostly for querying/searching by location. 
-Geoiter provides many locations within a boundary, like a country. 
-Let's say Germany has in sum 5000 houses to sell. Then most platforms will only allow you to visit the first 200 houses. 
+A simple tool to iterate coordinates within given boundaries such as country boundary.
+The usage is mostly for querying/searching by location at for example ebay.com or zillow.com
+ 
+Let's say Germany has in sum 5000 houses to sell. Then most platforms will only allow you to visit or request the first 200 houses. 
 Now to get the others, you need to dissect the big boundary area into smaller ones.
-And this is where geoiter provides you with coordinates
+And this is where geoiter provides you with coordinates.
 
 <img src="https://user-images.githubusercontent.com/84661606/159549731-44de6016-0582-4ef2-94ba-646b6277aec3.png" width="300" />
 
