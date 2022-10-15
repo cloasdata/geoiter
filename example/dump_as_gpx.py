@@ -1,13 +1,13 @@
 import pickle
 from geoiter import GeoIter
 
-from geoiter.util.ressource_example import get_germany_boundary
+from geoiter.util.ressource_example import get_german_border
 
 # to use this example install pip install geoiter["gpx"]
 from geoiter.util.gpx import gpx_dumps
 
 # get you boundaries
-germany = get_germany_boundary()
+germany = get_german_border()
 
 # prepare
 gi = GeoIter(

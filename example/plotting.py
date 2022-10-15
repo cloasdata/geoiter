@@ -4,7 +4,7 @@ Demonstrate the plot extension
 
 import pickle
 from geoiter import GeoIter
-from geoiter.util.ressource_example import get_germany_boundary
+from geoiter.util.ressource_example import get_german_border
 
 # to use this: pip install geoiter["plot"]
 # please note this may not work on windows machine. Please load GEOS/Cartopy binaries manual.
@@ -13,7 +13,7 @@ from geoiter.util.ressource_example import get_germany_boundary
 from geoiter.util.plot import  plot_geoiter
 
 # get you boundaries
-germany = get_germany_boundary()
+germany = get_german_border()
 
 # prepare
 gi = GeoIter(

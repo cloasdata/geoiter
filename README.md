@@ -25,19 +25,20 @@ geoiter has only one additional dependency called [haversine](https://pypi.org/p
     pip install geoiter
 
 ## usage
+
 ```python
-from geoiter.util.ressource_example import get_germany_boundary
+from geoiter.util.ressource_example import get_german_border
 from geoiter import GeoIter
 
 # get you boundary for example
-germany = get_germany_boundary()
+germany = get_german_border()
 
 # prepare
 gi = GeoIter(
     boundary=germany,
     radius=100,
     comp_rate=20
-    )
+)
 
 if __name__ == "__main__":
     # plot them as example

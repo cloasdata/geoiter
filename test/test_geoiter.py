@@ -3,7 +3,7 @@ import pickle
 import pytest
 
 from geoiter import GeoIter
-from geoiter.util.ressource_example import get_germany_boundary
+from geoiter.util.ressource_example import get_german_border
 
 
 @pytest.fixture()
@@ -20,7 +20,7 @@ def simple_geo(nodes):
 
 @pytest.fixture()
 def germany():
-    return get_germany_boundary()
+    return get_german_border()
 
 
 @pytest.fixture()
