@@ -7,5 +7,5 @@ path_to_germany = Path(__file__).parent / "res" / "germany.obj"
 
 
 def get_germany_boundary():
-    return pickle.load(path_to_germany.open("r"))
+    return pickle.load(path_to_germany.open("rb"))
 
