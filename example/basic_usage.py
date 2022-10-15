@@ -1,11 +1,10 @@
 import pickle
 
-from geoiter.util.ressource_example import germany
+from geoiter.util.ressource_example import get_germany_boundary
 from geoiter import GeoIter
 
 # get you boundary
-with open(germany, "rb") as file:
-    germany = pickle.load(file)
+germany = get_germany_boundary()
 
 # prepare
 gi = GeoIter(

@@ -26,14 +26,11 @@ geoiter has only one additional dependency called [haversine](https://pypi.org/p
 
 ## usage
 ```python
-import pickle
-
-from geoiter.util.ressource_example import germany
+from geoiter.util.ressource_example import get_germany_boundary
 from geoiter import GeoIter
 
 # get you boundary for example
-with open(germany, "rb") as file:
-    germany = pickle.load(file)
+germany = get_germany_boundary()
 
 # prepare
 gi = GeoIter(
@@ -56,7 +53,7 @@ However, it still can be slow.
 ## extensions
 There two extensions which give additional help
 
-    pip install geoiter["gpx]
+    pip install geoiter["gpx"]
 
 provides you with an gpx exporter.
 
