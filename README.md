@@ -3,6 +3,7 @@ iterates the planet.
 
 A simple tool to iterate coordinates within given boundaries such as country boundary.
 The usage is mostly for querying/searching by location at for example ebay.com or zillow.com
+A better description can be found <a ref="https://cloasdata.de/?p=321">here</a>.
  
 Let's say Germany has in sum 5000 houses to sell. Then most platforms will only allow you to visit or request the first 200 houses. 
 Now to get the others, you need to dissect the big boundary area into smaller ones.
@@ -21,10 +22,11 @@ the result density under the restriction limit.
 
 geoiter has only one additional dependency called [haversine](https://pypi.org/project/haversine/).
 
-## install
+## Install
     pip install geoiter
 
-## usage
+
+## Usage
 
 ```python
 from geoiter.util.ressource_example import get_german_border
@@ -45,13 +47,16 @@ if __name__ == "__main__":
     for coordinate in gi:
         print(coordinate)
 ```
-## speed
+
+You can find more samples under /example. There is also a real life we scraper.
+
+## Speed
 one may consider that geo data have megabytes of coordinates. Which may make the iteration very slow,
 because it needs to look up coordinates in the boundary often.
 To accelerate the **geoiter** provides a very simple compressor and uses bisect instead of list iteration.
 However, it still can be slow.
 
-## extensions
+## Extensions
 There two extensions which give additional help
 
     pip install geoiter["gpx"]
@@ -62,16 +67,17 @@ provides you with an gpx exporter.
 
 provides a plotting function to visualize the grid.
 
-## data
+## Data for borders
 get boundaries from osm or others sources like
 * https://www.geoboundaries.org/
 * https://osm-boundaries.com/
 * ...
 
-## todo
+## Todo
 * SRP for compressor
 * Make own haversine calculation for fixed directions.
 
 ## Homepage
-* <a href="https://github.com/cloasdata/geoiter">on github </a>
-* <a href="https://pypi.org/project/geoiter">on pypi </a>
+* <a href="https://github.com/cloasdata/geoiter">on github</a>
+* <a href="https://pypi.org/project/geoiter">on pypi</a>
+* <a href="https://cloasdata.de/?p=321">on my homepage</a>
